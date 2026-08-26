@@ -18,13 +18,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: mayuri0v0's blog
+title: mayuri0v0的怀表
 email: aya2018010402@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mayuri0v0.github.io/blog/" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username: jekyll
+github_username: mayuri0v0
 
 # Build settings
 theme: minima
