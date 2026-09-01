@@ -12,12 +12,25 @@ layout: default
       </time>
       {%- if page.author -%}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {%- endif -%}</p>
+      {%- endif -%}
+      {%- for cat in page.categories -%}
+        {%- assign cat_page = site.pages | where: "layout", "category" | where: "category", cat | first -%}
+        {%- if cat_page -%}
+        • <a class="post-category" href="{{ cat_page.url | relative_url }}">{{ cat_page.title | escape }}</a>
+        {%- endif -%}
+      {%- endfor -%}</p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
+
+  {%- for cat in page.categories -%}
+    {%- assign cat_page = site.pages | where: "layout", "category" | where: "category", cat | first -%}
+    {%- if cat_page -%}
+  <p class="back-to-category"><a href="{{ cat_page.url | relative_url }}">← 返回分类：{{ cat_page.title | escape }}</a></p>
+    {%- endif -%}
+  {%- endfor -%}
 
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}
