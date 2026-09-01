@@ -9,7 +9,6 @@ layout: default
 
   {%- assign category_pages = site.pages | where: "layout", "category" | sort: "order" -%}
   {%- if category_pages.size > 0 -%}
-  <h2 class="post-list-heading">分类</h2>
   <ul class="post-list category-nav">
     {%- for cp in category_pages -%}
     <li>
@@ -17,25 +16,6 @@ layout: default
         <a class="post-link" href="{{ cp.url | relative_url }}">{{ cp.title | escape }}</a>
         <span class="post-meta">（{{ site.categories[cp.category].size | default: 0 }} 篇）</span>
       </h3>
-    </li>
-    {%- endfor -%}
-  </ul>
-  {%- endif -%}
-
-  {%- if site.posts.size > 0 -%}
-  <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-  <ul class="post-list">
-    {%- for post in site.posts -%}
-    <li>
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y"
-      -%}
-      <span class="post-meta">{{ post.date | date: date_format }}</span>
-      <h3>
-        <a class="post-link" href="{{ post.url | relative_url }}">
-          {{ post.title | escape }}
-        </a>
-      </h3>
-      {%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}
     </li>
     {%- endfor -%}
   </ul>
