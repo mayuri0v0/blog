@@ -5,7 +5,24 @@ layout: default
 <div class="home">
   {%- if page.title -%}
   <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%} {{ content }} {%- if site.posts.size > 0 -%}
+  {%- endif -%} {{ content }}
+
+  {%- assign category_pages = site.pages | where: "layout", "category" | sort: "order" -%}
+  {%- if category_pages.size > 0 -%}
+  <h2 class="post-list-heading">分类</h2>
+  <ul class="post-list category-nav">
+    {%- for cp in category_pages -%}
+    <li>
+      <h3>
+        <a class="post-link" href="{{ cp.url | relative_url }}">{{ cp.title | escape }}</a>
+        <span class="post-meta">（{{ site.categories[cp.category].size | default: 0 }} 篇）</span>
+      </h3>
+    </li>
+    {%- endfor -%}
+  </ul>
+  {%- endif -%}
+
+  {%- if site.posts.size > 0 -%}
   <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
   <ul class="post-list">
     {%- for post in site.posts -%}
