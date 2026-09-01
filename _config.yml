@@ -26,6 +26,7 @@ url: "https://mayuri0v0.github.io/blog/" # the base hostname & protocol for your
 github_username: mayuri0v0
 
 # Build settings
+permalink: /:year/:month/:day/:title/
 theme: minima
 plugins:
   - jekyll-feed
