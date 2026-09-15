@@ -1,9 +1,9 @@
 ---
 layout: category
-title: 学习笔记
-category: 学习笔记
+title: 未归类
+category: 未归类
 order: 2
-permalink: /categories/study-notes/
+permalink: /categories/other/
 ---
 
-读书、技术学习、刷题的记录。
+Not Classified。
