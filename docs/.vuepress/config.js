@@ -6,7 +6,7 @@ import { defineUserConfig } from 'vuepress'
 
 export default defineUserConfig({
   bundler: viteBundler(),
-  base: '/blog/',
+  base: '/',
   lang: 'zh-CN',
   title: 'mayuri0v0的怀表',
   description: '逆向与 CTF 学习笔记',
@@ -69,6 +69,8 @@ export default defineUserConfig({
     repo: 'mayuri0v0/blog',
     docsBranch: 'main',
     docsDir: 'docs',
+    // 显式关闭「编辑此页」链接（默认主题 editLink 默认为 true）
+    editLink: false,
     // 默认主题的插件配置需放在 themePlugins 下
     themePlugins: {
       // 默认主题内置 prismjs 做代码高亮，这里配置预加载语言
