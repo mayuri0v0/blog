@@ -68,18 +68,20 @@ export default defineUserConfig({
         ],
       },
     ],
-    // 默认主题内置 prismjs 做代码高亮，这里配置预加载语言
-    prismjs: {
-      preloadLanguages: [
-        'csharp', 'c', 'cpp', 'bash', 'json',
-        'javascript', 'typescript', 'python', 'java',
-      ],
-    },
     repo: 'mayuri0v0/blog',
     docsBranch: 'main',
     docsDir: 'docs',
-    editLink: true,
-    editLinkText: '帮助我改善此页面！',
-    // 注：lastUpdated 已由内置 @vuepress/plugin-git 提供，默认关闭，需要可设为 true
+    // 默认主题的插件配置需放在 themePlugins 下
+    themePlugins: {
+      // 默认主题内置 prismjs 做代码高亮，这里配置预加载语言
+      prismjs: {
+        preloadLanguages: [
+          'csharp', 'c', 'cpp', 'bash', 'json',
+          'javascript', 'typescript', 'python', 'java',
+        ],
+      },
+      // 禁用页面底部的贡献者（Contributors）显示
+      git: { contributors: false },
+    },
   }),
 })
