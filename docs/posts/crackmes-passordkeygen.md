@@ -4,7 +4,7 @@ date: 2026-08-30
 category: CTF
 ---
 
-
+# CTF Reverse - S90x123's passord key gen
 
 逆向练习, 来自[crackmes.one](https://crackmes.one/crackme/6a6654c38ab4ef0d9d8abc68), 难度1⭐/5⭐
 

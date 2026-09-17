@@ -4,7 +4,7 @@ date: 2026-09-15
 category: CTF
 ---
 
-
+# CTF Reverse - CTF^2 REVERSE3
 
 逆向练习，来自 https://ctf2.dasctf.com/, 难度1⭐/5⭐
 

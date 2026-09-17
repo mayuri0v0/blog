@@ -47,8 +47,6 @@ export default defineUserConfig({
   theme: defaultTheme({
     navbar: [
       { text: '首页', link: '/' },
-      { text: 'CTF', link: '/categories/ctf.html' },
-      { text: '未归类', link: '/categories/other.html' },
     ],
     sidebar: [
       {
