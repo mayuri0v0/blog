@@ -24,7 +24,9 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          # vuepress@2.0.0-rc.31 要求 node >=22.18.0；用 24 自带 npm 11，
+          # 其 peer 依赖校验与本地一致，可正确处理 @mdit 的 markdown-it@15 peer
+          node-version: 24
           cache: npm
       - name: Setup Pages
         uses: actions/configure-pages@v5
