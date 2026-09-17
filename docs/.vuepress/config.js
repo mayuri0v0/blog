@@ -51,6 +51,7 @@ export default defineUserConfig({
     sidebar: [
       {
         text: 'CTF',
+        link: '/categories/ctf.html',
         collapsible: false,
         children: [
           '/posts/crackmes-passordkeygen.md',
@@ -59,6 +60,7 @@ export default defineUserConfig({
       },
       {
         text: '未归类',
+        link: '/categories/other.html',
         collapsible: false,
         children: [
           '/posts/unity-mono-mod.md',
