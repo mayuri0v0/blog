@@ -1,0 +1,68 @@
+/* JetBrains Mono 字体声明 */
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/fonts/JetBrainsMono-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/fonts/JetBrainsMono-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/fonts/JetBrainsMono-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* 代码使用 JetBrains Mono 等宽字体 */
+:not(pre) > code,
+pre,
+pre code {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, 'SF Mono', Menlo,
+    Consolas, 'Liberation Mono', 'Courier New', monospace;
+}
+
+/* 平滑滚动 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 自定义容器 */
+.definition,
+.theorem,
+.conclusion,
+.algorithm {
+  margin: 1rem 0;
+  padding: 0.1rem 1.5rem;
+  border-radius: 0.4rem;
+}
+
+.definition .title,
+.theorem .title,
+.conclusion .title,
+.algorithm .title {
+  font-weight: bold;
+}
+
+.definition {
+  background-color: #f0f4f8;
+}
+
+.theorem {
+  background-color: #edfbf2;
+}
+
+.conclusion {
+  background-color: #f9f2f9;
+}
+
+.algorithm {
+  background-color: #fbfbed;
+}

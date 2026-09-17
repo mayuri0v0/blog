@@ -1,0 +1,23 @@
+{
+  "name": "mayuri0v0-blog",
+  "version": "1.0.0",
+  "private": true,
+  "description": "mayuri0v0 的逆向与 CTF 学习笔记",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "@vuepress/bundler-vite": "^2.0.0-rc.31",
+    "@vuepress/plugin-markdown-container": "^2.0.0-rc.134",
+    "@vuepress/plugin-markdown-math": "^2.0.0-rc.134",
+    "@vuepress/theme-default": "^2.0.0-rc.134",
+    "katex": "^0.18.7",
+    "sass-embedded": "^1.104.1",
+    "vuepress": "^2.0.0-rc.31"
+  },
+  "dependencies": {
+    "gitalk": "^1.8.0"
+  }
+}

@@ -1,6 +1,5 @@
-_site
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
+node_modules/
+docs/.vuepress/dist/
+docs/.vuepress/.cache/
+docs/.vuepress/.temp/
 .vscode
-vendor
