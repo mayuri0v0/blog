@@ -5,6 +5,8 @@
   "description": "mayuri0v0 的逆向与 CTF 学习笔记",
   "type": "module",
   "scripts": {
+    "predocs:dev": "node scripts/generate-categories.mjs",
+    "predocs:build": "node scripts/generate-categories.mjs",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },

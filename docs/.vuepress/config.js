@@ -3,6 +3,7 @@ import { defaultTheme } from '@vuepress/theme-default'
 import { markdownContainerPlugin } from '@vuepress/plugin-markdown-container'
 import { markdownMathPlugin } from '@vuepress/plugin-markdown-math'
 import { defineUserConfig } from 'vuepress'
+import { sidebar } from './sidebar.js'
 
 export default defineUserConfig({
   bundler: viteBundler(),
@@ -48,26 +49,7 @@ export default defineUserConfig({
     navbar: [
       { text: '首页', link: '/' },
     ],
-    sidebar: [
-      {
-        text: 'CTF',
-        link: '/categories/ctf.html',
-        collapsible: false,
-        children: [
-          '/posts/crackmes-passordkeygen.md',
-          '/posts/ctf2-reverse3.md',
-        ],
-      },
-      {
-        text: '未归类',
-        link: '/categories/other.html',
-        collapsible: false,
-        children: [
-          '/posts/unity-mono-mod.md',
-          '/posts/steamless.md',
-        ],
-      },
-    ],
+    sidebar,
     repo: 'mayuri0v0/blog',
     docsBranch: 'main',
     docsDir: 'docs',
