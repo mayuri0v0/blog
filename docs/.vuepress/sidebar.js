@@ -8,6 +8,8 @@ export const sidebar = [
     children: [
       '/posts/crackmes-passordkeygen.md',
       '/posts/ctf2-reverse3.md',
+      '/posts/ctf-web-robot-verification.md',
+      '/posts/n17-ctf-rev2.md',
     ],
   },
   {
@@ -18,6 +20,7 @@ export const sidebar = [
       '/posts/unity-mono-mod.md',
       '/posts/steamless.md',
       '/posts/fastjson.md',
+      '/posts/debian13-nmcli.md',
     ],
   },
 ]
